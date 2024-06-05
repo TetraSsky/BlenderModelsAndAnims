@@ -36,7 +36,7 @@ Youtube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
 
 Lien du projet - https://github.com/TetraSsky/BlenderModelsAndAnims
 
-N'hésitez pas à me contacter en cas de besoin, question ou conseil vis à vis de mes réalisations présentes sur ce projet 🙂 !
+N'hésitez pas à me contacter en cas de besoin, question ou conseil/retour vis à vis de mes réalisations présentes sur ce projet 🙂 !
 
 ## Commencer
 
@@ -78,7 +78,7 @@ YouTube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
 
 Project Link - https://github.com/TetraSsky/BlenderModelsAndAnims
 
-Feel free to contact me if you need anything, have questions, or need advice about my work in this project 🙂!
+Feel free to contact me if you need anything, have questions, or feedback/advice about my work in this project 🙂!
 
 ## Getting Started
 
