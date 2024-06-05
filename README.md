@@ -2,17 +2,17 @@
   <a href="https://github.com/ShaanCoding/ReadME-Generator">
     <img src="https://avatars.githubusercontent.com/u/145525993?v=4" alt="Logo" width="120" height="120">
   </a>
-  <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h3>
+  <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
 </div>
 
-([English translation](#EN))
+<p align="center">([English translation](#essentials))</p>
 
 # Les essentiels
 
-- [À propos](#notice)
+- [Notice](#notice)
 - [Contact](#me-contacter)
 - [Commencer](#commencer)
-- [Licence](#license-FR)
+- [Licence](#license-fr)
 
 # Notice
 
@@ -49,14 +49,12 @@ Distribué sous la licence MIT. Voir [Licence MIT](https://opensource.org/licens
 
 ---
 
-#EN
-
 # Essentials
 
-- [About](#About)
+- [About](#about)
 - [Contact](#contact-me)
 - [Getting Started](#getting-started)
-- [License](#license-EN)
+- [License](#license-Een)
 
 # About
 
