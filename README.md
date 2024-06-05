@@ -5,7 +5,7 @@
   <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
 </div>
 
-<p align="center"> [English translation](#essentials) </p>
+<div align="center"> [English translation](#essentials) </div>
 
 # Les essentiels
 
