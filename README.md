@@ -9,6 +9,8 @@
 
 [English translation](#essentials)
 
+---
+
 # Les essentiels
 
 - [Notice](#notice)
