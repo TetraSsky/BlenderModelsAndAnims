@@ -5,6 +5,8 @@
   <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
 </div>
 
+---
+
 # Contact
 
 Discord - tetra_sky
@@ -14,6 +16,8 @@ Twitter/X - [@Tetra__Sky](https://twitter.com/Tetra__Sky)
 Instagram - [tetra_sky](https://www.instagram.com/tetra__sky/)
 
 YouTube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
+
+---
 
 # Translation (English)
 
