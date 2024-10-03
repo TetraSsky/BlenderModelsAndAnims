@@ -5,6 +5,16 @@
   <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
 </div>
 
+# Contact
+
+Discord - tetra_sky
+
+Twitter/X - [@Tetra__Sky](https://twitter.com/Tetra__Sky)
+
+Instagram - [tetra_sky](https://www.instagram.com/tetra__sky/)
+
+YouTube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
+
 # Translation (English)
 
 [English translation](#essentials)
@@ -21,22 +31,6 @@
 # Notice
 
 ###### Les modèles présents dans les animations peuvent varier, mais peuvent aussi provenir de différentes licences qui ne m'appartiennent pas. Les droits relatifs à ces compagnies leur reviennent. Les rigs que je réalise sont à but éducatif pour apprendre à utiliser Blender !
-
-# Me contacter
-
-#### Créateur : Tetra_Sky
-
-Discord - tetra_sky
-
-Twitter/X - [@Tetra__Sky](https://twitter.com/Tetra__Sky)
-
-Instagram - [tetra_sky](https://www.instagram.com/tetra__sky/)
-
-Youtube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
-
-Lien du projet - https://github.com/TetraSsky/BlenderModelsAndAnims
-
-N'hésitez pas à me contacter en cas de besoin, question ou conseil/retour vis à vis de mes réalisations présentes sur ce projet 🙂 !
 
 ## Commencer
 
@@ -63,22 +57,6 @@ Distribué sous la licence MIT. Voir [Licence MIT](https://opensource.org/licens
 # About
 
 ###### The models in the animations may vary, but they may also come from different licenses that do not belong to me. The rights belong to these companies. The rigs I create are for educational purposes to learn how to use Blender!
-
-# Contact me
-
-#### Creator: Tetra_Sky
-
-Discord - tetra_sky
-
-Twitter/X - [@Tetra__Sky](https://twitter.com/Tetra__Sky)
-
-Instagram - [tetra_sky](https://www.instagram.com/tetra__sky/)
-
-YouTube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
-
-Project Link - https://github.com/TetraSsky/BlenderModelsAndAnims
-
-Feel free to contact me if you need anything, have questions, or feedback/advice about my work in this project 🙂!
 
 ## Getting Started
 
