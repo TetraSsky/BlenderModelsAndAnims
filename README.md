@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/ShaanCoding/ReadME-Generator">
-    <img src="https://repository-images.githubusercontent.com/811078411/4b2c89d6-a09a-47f5-bf84-4320e9830756" alt="Logo">
+    <img src="https://repository-images.githubusercontent.com/811078411/11d5a8eb-e761-4160-915d-cd1bb3e43a2f" alt="Logo">
   </a>
   <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
 
