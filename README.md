@@ -8,7 +8,7 @@
   <h2 align="center">Rejoignez le Discord !</h2>
   <h2 align="center">Join the Discord !</h2>
   <a href="https://discord.gg/HTA7yQTQdw">
-    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a4/Discord_logo.svg/512px-Discord_logo.svg.png" alt="Logo Discord" width="100" height="100">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/200px-Discord_logo.svg.png">
   </a>
 
 ---
