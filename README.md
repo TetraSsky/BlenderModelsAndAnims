@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://github.com/ShaanCoding/ReadME-Generator">
-    <img src="https://repository-images.githubusercontent.com/811078411/32cc7779-00cd-4452-9ee5-367ecf998242" alt="Logo du projet">
+    <img src="https://repository-images.githubusercontent.com/811078411/32cc7779-00cd-4452-9ee5-367ecf998242">
   </a>
   <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
 
-  <h2 align="center">Rejoignez le Discord !</h2>
+  <h2 align="center">⬇️ Discord ⬇️</h2>
   <a href="https://discord.gg/HTA7yQTQdw">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/200px-Discord_logo.svg.png">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/200px-Discord_logo.svg.png" width="100" height="100">
   </a>
 
 ---
