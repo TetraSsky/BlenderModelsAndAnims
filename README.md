@@ -3,10 +3,8 @@
     <img src="https://repository-images.githubusercontent.com/811078411/32cc7779-00cd-4452-9ee5-367ecf998242" alt="Logo du projet">
   </a>
   <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
-  <h2 align="center">RIGs, Models and Animations of Tetra_Sky</h2>
 
   <h2 align="center">Rejoignez le Discord !</h2>
-  <h2 align="center">Join the Discord !</h2>
   <a href="https://discord.gg/HTA7yQTQdw">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/200px-Discord_logo.svg.png">
   </a>
