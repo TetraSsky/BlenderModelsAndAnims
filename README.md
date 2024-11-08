@@ -6,7 +6,7 @@
 
   <h2 align="center">⬇️ Discord ⬇️</h2>
   <a href="https://discord.gg/HTA7yQTQdw">
-    <img src="https://cdn.discordapp.com/attachments/1296441119671976048/1296451647622348882/Discordbanner.png?ex=6712562f&is=671104af&hm=64ca991b65f20e010fa86ab1c999ab765b833eb0318de81b676fbac987c801c0&">
+    <img src="https://cdn.discordapp.com/attachments/1296441119671976048/1296451647622348882/Discordbanner.png?ex=672f572f&is=672e05af&hm=fadf436db648feffd8d8b3ebc6073dc96ea3f5127393f8cdd4cbc35f72f25593&">
   </a>
 
 ---
