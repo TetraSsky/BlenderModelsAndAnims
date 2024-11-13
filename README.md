@@ -15,7 +15,7 @@
 
 Discord - tetra_sky
 
-Twitter/X - [@Tetra__Sky](https://twitter.com/Tetra__Sky)
+Bluesky - [@tetra-sky.bsky.social](https://bsky.app/profile/tetra-sky.bsky.social)
 
 Instagram - [tetra_sky](https://www.instagram.com/tetra__sky/)
 
