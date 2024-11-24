@@ -4,7 +4,7 @@
   </a>
   <h2 align="center">Les RIGs, Modèles et Animations de Tetra_Sky</h2>
 
-  <h2 align="center">⬇️ Discord ⬇️</h2>
+  <h2 align="center">⬇️ Join the Discord ⬇️</h2>
   <a href="https://discord.gg/HTA7yQTQdw">
     <img src="https://raw.githubusercontent.com/TetraSsky/BlenderModelsAndAnims/refs/heads/main/Discordbanner.png">
   </a>
