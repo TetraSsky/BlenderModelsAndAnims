@@ -22,39 +22,6 @@ YouTube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
 
 ---
 
-</div>
-
-# Translation (English)
-
-[English translation](#essentials)
-
----
-
-# Les essentiels
-
-- [Notice](#notice)
-- [Contact](#me-contacter)
-- [Commencer](#commencer)
-- [Licence](#license-fr)
-
-# Notice
-
-###### Les droits relatifs à ces compagnies leur reviennent. Les rigs que je réalise sont à but éducatif pour apprendre à utiliser Blender !
-
-## Commencer
-
-Veuillez prendre en compte ces quelques points avant d'importer un projet/modèle sur Blender :
-
-1. **Version de Blender** : Blender 4.X ou supérieure
-2. **Exigences & Dépendances** : Certains projets peuvent nécessiter des add-ons spécifiques (Surtout pour des animations). Un fichier nommé "README" si il y en a un inclut avec votre téléchargement !
-3. **Créditez-moi** : Même si je n'ai pas réalisé ces modèles (Pour certains), j'y consacre mon temps libre pour la création rigs cohérent et complet et ce, de même pour mes animations. Que ce soit en me taguant et/ou en reliant les personnes à ce dépôt Github aide toujours 😊 !
-
-## Licence FR
-
-Distribué sous la licence MIT. Voir [Licence MIT](https://opensource.org/licenses/MIT) pour plus d'informations.
-
----
-
 # Essentials
 
 - [About](#about)
