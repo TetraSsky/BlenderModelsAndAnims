@@ -19,6 +19,7 @@ Bluesky - [@tetra-sky.bsky.social](https://bsky.app/profile/tetra-sky.bsky.socia
 Instagram - [tetra_sky](https://www.instagram.com/tetra__sky/)
 
 YouTube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
+</div>
 
 ---
 
