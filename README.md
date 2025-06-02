@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/ShaanCoding/ReadME-Generator">
-    <img src="https://repository-images.githubusercontent.com/811078411/4ac75806-50ae-497b-9e47-eee8c60927c8">
+    <img src="https://repository-images.githubusercontent.com/811078411/fc0b2e72-fbf6-467b-968b-02bdbd979063">
   </a>
 
   <h2 align="center">⬇️ Join the Discord ⬇️</h2>
