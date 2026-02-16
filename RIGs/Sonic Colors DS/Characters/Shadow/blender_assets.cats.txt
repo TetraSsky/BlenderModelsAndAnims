@@ -1,0 +1,15 @@
+# This is an Asset Catalog Definition file for Blender.
+#
+# Empty lines and lines starting with `#` will be ignored.
+# The first non-ignored line should be the version indicator.
+# Other lines are of the format "UUID:catalog/path/for/assets:simple catalog name"
+
+VERSION 1
+
+08a9c6a1-d303-4f78-8ac9-f5e594df46b7:Eyes Template:Eyes Template
+a67676a5-72ad-4c80-ac96-a0382a3610a2:Left Hand:Left Hand
+7a78d680-93b5-4198-954b-6c5bbe5fecde:Mouth Template:Mouth Template
+4b20f5ec-9929-4124-9568-1b73b5e3c625:Pose (Presets):Pose (Presets)
+bf621979-abe7-4cd4-a2d3-f970952765ae:Pupils:Pupils
+c35ac666-f153-4f3f-8bcd-70785cf82e4c:Right Hand:Right Hand
+1140de5a-a9b8-4c61-bfd6-ad9a3b23f04f:Shadow:Shadow
