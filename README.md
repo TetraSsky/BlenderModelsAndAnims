@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/ShaanCoding/ReadME-Generator">
-    <img src="https://repository-images.githubusercontent.com/811078411/fc0b2e72-fbf6-467b-968b-02bdbd979063">
+    <img src="https://repository-images.githubusercontent.com/811078411/d76a7d3b-219e-4fde-a47d-062846a1cb5d">
   </a>
 
   <h2 align="center">⬇️ Join the Discord ⬇️</h2>
@@ -38,7 +38,7 @@ YouTube - [@tetra_Sky](https://www.youtube.com/@tetra_sky)
 
 Please consider these few points before importing a project/model in Blender:
 
-1. **Blender Version**: Blender 4.X or higher
+1. **Blender Version**: Blender 5.X or higher
 2. **Requirements & Dependencies**: Some projects may require specific add-ons (Especially for animations). Check to make sure you read the "README" file if one is included with your download !
 3. **Credit Me**: Even though I did not create these models (for some), I dedicate my free time to creating coherent and complete rigs, as well as animations. Tagging me and/or linking people to this GitHub repository always helps 😊 !
 
