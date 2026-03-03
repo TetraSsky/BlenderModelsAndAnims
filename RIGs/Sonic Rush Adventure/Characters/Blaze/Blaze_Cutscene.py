@@ -24,80 +24,66 @@ def is_limb_selected(context, bone_names):
 
 class RigMainPropertiesPanel(bpy.types.Panel):
     bl_label = "Rig Properties"
-    bl_idname = "OBJECT_PT_BLAZE_CUTSCENE" + rig_id
+    bl_idname = "OBJECT_PT_SONIC_CUTSCENE" + rig_id
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
     bl_category = 'Item'
-
+    
     @classmethod
-    def poll(self, context):
+    def poll(cls, context):
         if context.mode != 'POSE':
             return False
         try:
             rig = context.active_object
-            if not rig or rig.type != 'ARMATURE' or rig.get("rig_id") != rig_id:
+            if not (rig and rig.get("rig_id") == rig_id):
                 return False
-            
-            selected_names = [bone.name for bone in context.selected_pose_bones]
-            relevant_bones = [
+            selected_names = {bone.name for bone in (context.selected_pose_bones or [])}
+            relevant_bones = {
                 "Parent_Arm_L", "IK_Shoulder_L", "IK_Wrist_L",
                 "Parent_Arm_R", "IK_Shoulder_R", "IK_Wrist_R",
                 "Parent_Thigh_L", "IK_Thigh_L", "FootCTRL_L",
                 "Parent_Thigh_R", "IK_Thigh_R", "FootCTRL_R",
                 "EyesCTRLMaster", "MouthCTRLMaster", "QuillsCTRLMaster"
-            ]
-            
-            return any(bone_name in selected_names for bone_name in relevant_bones)
+            }
+            return bool(selected_names & relevant_bones)
         except:
             return False
 
     def draw(self, context):
+        
         layout = self.layout
         rig = context.active_object
 
-        def is_selected_in_context(bone_names):
-            selected_names = [bone.name for bone in context.selected_pose_bones]
-            return any(name in selected_names for name in bone_names)
+        try:
+            rig = context.active_object
+            if rig and rig.get("rig_id") == rig_id:
+                if is_limb_selected(context, ["Parent_Arm_L", "IK_Shoulder_L", "IK_Wrist_L"]):
+                    self.draw_limb_properties(layout, rig, "left_arm", "IK_ArmSwitch_L", "Parent_Arm_L")
 
-        # LEFT ARM
-        left_arm_bones = ["Parent_Arm_L", "IK_Shoulder_L", "IK_Wrist_L"]
-        if is_selected_in_context(left_arm_bones):
-            self.draw_limb_properties(layout, context, "left_arm", "IK_ArmSwitch_L", "Parent_Arm_L")
+                if is_limb_selected(context, ["Parent_Arm_R", "IK_Shoulder_R", "IK_Wrist_R"]):
+                    self.draw_limb_properties(layout, rig, "right_arm", "IK_ArmSwitch_R", "Parent_Arm_R")
 
-        # RIGHT ARM
-        right_arm_bones = ["Parent_Arm_R", "IK_Shoulder_R", "IK_Wrist_R"]
-        if is_selected_in_context(right_arm_bones):
-            self.draw_limb_properties(layout, context, "right_arm", "IK_ArmSwitch_R", "Parent_Arm_R")
+                if is_limb_selected(context, ["Parent_Thigh_L", "IK_Thigh_L", "FootCTRL_L"]):
+                    self.draw_limb_properties(layout, rig, "left_leg", "IK_LegSwitch_L", "Parent_Thigh_L")
 
-        # LEFT LEG
-        left_leg_bones = ["Parent_Thigh_L", "IK_Thigh_L", "FootCTRL_L"]
-        if is_selected_in_context(left_leg_bones):
-            self.draw_limb_properties(layout, context, "left_leg", "IK_LegSwitch_L", "Parent_Thigh_L")
+                if is_limb_selected(context, ["Parent_Thigh_R", "IK_Thigh_R", "FootCTRL_R"]):
+                    self.draw_limb_properties(layout, rig, "right_leg", "IK_LegSwitch_R", "Parent_Thigh_R")
 
-        # RIGHT LEG
-        right_leg_bones = ["Parent_Thigh_R", "IK_Thigh_R", "FootCTRL_R"]
-        if is_selected_in_context(right_leg_bones):
-            self.draw_limb_properties(layout, context, "right_leg", "IK_LegSwitch_R", "Parent_Thigh_R")
+                if is_limb_selected(context, ["EyesCTRLMaster"]):
+                    self.draw_limit_distance_property(layout, rig, "EyesCTRLMaster")
+                    
+                if is_limb_selected(context, ["MouthCTRLMaster"]):
+                    self.draw_limit_distance_property(layout, rig, "MouthCTRLMaster")
 
-        # EYES
-        if is_selected_in_context(["EyesCTRLMaster"]):
-            self.draw_limit_distance_property(layout, rig, "EyesCTRLMaster")
-            
-        # MOUTH
-        if is_selected_in_context(["MouthCTRLMaster"]):
-            self.draw_limit_distance_property(layout, rig, "MouthCTRLMaster")
+                if is_limb_selected(context, ["QuillsCTRLMaster"]):
+                    self.draw_limit_distance_property(layout, rig, "QuillsCTRLMaster")
+                    self.draw_quills_properties(layout, rig, "QuillsCTRLMaster")
+        except Exception as e:
+            layout.label(text=f"Draw error: {e}", icon='ERROR')
 
-        # QUILLS
-        if is_selected_in_context(["QuillsCTRLMaster"]):
-            self.draw_limit_distance_property(layout, rig, "QuillsCTRLMaster")
-            self.draw_quills_properties(layout, rig, "QuillsCTRLMaster")
-            
-        if len(layout._layout.column()._column.children) == 0:
-            layout.label(text="Select a control bone to see properties")
 
-    def draw_limb_properties(self, layout, context, limb_prefix, switch_bone_name, parent_bone_name):
-        rig = context.active_object
-        
+
+    def draw_limb_properties(self, layout, rig, limb_prefix, switch_bone_name, parent_bone_name):
         row = layout.row()
         row.operator(f"rig.{limb_prefix}_fk_to_ik_snap", text="FK -> IK Snap", icon='SNAP_ON')
         row.operator(f"rig.{limb_prefix}_ik_to_fk_snap", text="IK -> FK Snap", icon='SNAP_ON')
@@ -113,6 +99,17 @@ class RigMainPropertiesPanel(bpy.types.Panel):
                 row.label(text="IK_Switch property not found!")
         else:
             row.label(text=f"{switch_bone_name} bone not found!")
+
+        # parent_bone = rig.pose.bones.get(parent_bone_name)
+        # if parent_bone:
+        #    stretch_prop = parent_bone.get("IK_Stretch")
+        #    if stretch_prop is not None:
+        #        row = layout.row()
+        #        row.prop(parent_bone, '["IK_Stretch"]', slider=True, text="IK Stretch")
+        #    else:
+        #        row.label(text="IK_Stretch property not found!")
+        # else:
+        #    row.label(text=f"{parent_bone_name} bone not found!")
 
     def draw_limit_distance_property(self, layout, rig, bone_name):
         bone = rig.pose.bones.get(bone_name)
@@ -138,6 +135,7 @@ class RigMainPropertiesPanel(bpy.types.Panel):
                 row.prop(bone, '["Q - Follow"]', text="Q - Follow", toggle=True, icon='SNAP_ON')
             else:
                 layout.label(text="Q - Follow property not found!")
+
         else:
             layout.label(text=f"{bone_name} bone not found!")
 
