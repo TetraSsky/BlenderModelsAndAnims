@@ -1,8 +1,8 @@
 bl_info = {
     "name" : "Sonic Cutscene",
     "author" : "TΞTRΛ_SKY",
-    "version" : (1, 1, 0),
-    "blender" : (4, 5, 1),
+    "version" : (2, 1, 0),
+    "blender" : (5, 0, 1),
     "description" : "Complementary addon for Sonic's custom rig"
 }
 
@@ -96,16 +96,16 @@ class RigMainPropertiesPanel(bpy.types.Panel):
         else:
             row.label(text=f"{switch_bone_name} bone not found!")
 
-        # parent_bone = rig.pose.bones.get(parent_bone_name)
-        # if parent_bone:
-        #    stretch_prop = parent_bone.get("IK_Stretch")
-        #    if stretch_prop is not None:
-        #        row = layout.row()
-        #        row.prop(parent_bone, '["IK_Stretch"]', slider=True, text="IK Stretch")
-        #    else:
-        #        row.label(text="IK_Stretch property not found!")
-        # else:
-        #    row.label(text=f"{parent_bone_name} bone not found!")
+        parent_bone = rig.pose.bones.get(parent_bone_name)
+        if parent_bone:
+           stretch_prop = parent_bone.get("IK_Stretch")
+           if stretch_prop is not None:
+               row = layout.row()
+               row.prop(parent_bone, '["IK_Stretch"]', slider=True, text="IK Stretch")
+           else:
+               row.label(text="IK_Stretch property not found!")
+        else:
+           row.label(text=f"{parent_bone_name} bone not found!")
 
     def draw_limit_distance_property(self, layout, rig, bone_name):
         bone = rig.pose.bones.get(bone_name)

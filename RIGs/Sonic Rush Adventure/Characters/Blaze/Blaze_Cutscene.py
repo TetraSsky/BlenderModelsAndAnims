@@ -1,8 +1,8 @@
 bl_info = {
     "name" : "Blaze Cutscene",
     "author" : "TΞTRΛ_SKY",
-    "version" : (1, 0, 0),
-    "blender" : (4, 4, 3),
+    "version" : (2, 1, 0),
+    "blender" : (5, 0, 1),
     "description" : "Complementary addon for Blaze's custom rig"
 }
 
@@ -11,10 +11,11 @@ from collections import defaultdict
 
 rig_id = "blaze"
 
-def is_limb_selected(rig, bone_names):
-    if rig and rig.type == 'ARMATURE':
-        selected_bones = [bone.name for bone in rig.data.bones if bone.select]
-        return any(bone_name in selected_bones for bone_name in bone_names)
+def is_limb_selected(context, bone_names):
+    selected = context.selected_pose_bones
+    if selected:
+        selected_names = {bone.name for bone in selected}
+        return any(name in selected_names for name in bone_names)
     return False
 
 def is_limb_selected(context, bone_names):
@@ -100,16 +101,16 @@ class RigMainPropertiesPanel(bpy.types.Panel):
         else:
             row.label(text=f"{switch_bone_name} bone not found!")
 
-        # parent_bone = rig.pose.bones.get(parent_bone_name)
-        # if parent_bone:
-        #    stretch_prop = parent_bone.get("IK_Stretch")
-        #    if stretch_prop is not None:
-        #        row = layout.row()
-        #        row.prop(parent_bone, '["IK_Stretch"]', slider=True, text="IK Stretch")
-        #    else:
-        #        row.label(text="IK_Stretch property not found!")
-        # else:
-        #    row.label(text=f"{parent_bone_name} bone not found!")
+        parent_bone = rig.pose.bones.get(parent_bone_name)
+        if parent_bone:
+           stretch_prop = parent_bone.get("IK_Stretch")
+           if stretch_prop is not None:
+               row = layout.row()
+               row.prop(parent_bone, '["IK_Stretch"]', slider=True, text="IK Stretch")
+           else:
+               row.label(text="IK_Stretch property not found!")
+        else:
+           row.label(text=f"{parent_bone_name} bone not found!")
 
     def draw_limit_distance_property(self, layout, rig, bone_name):
         bone = rig.pose.bones.get(bone_name)
